@@ -33,3 +33,7 @@ h1 {
   background-color: #95bcf1;
   cursor: pointer;
 }
+
+.hide {
+  display: none;
+}
