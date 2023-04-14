@@ -9,36 +9,35 @@
 <body>
   <h1>Weekly Planner</h1>
   <div class="container">
-    <div class="modal">
-      <h2>Add Entry</h2>
-      <div>
-        <form>
-          <div class="column-half">
-            <label for="select-day-of-week"></label>
-            <select name="select-day-of-week" placeholder="Day of Week">
-              <option>Monday</option>
-              <option>Tuesday</option>
-              <option>Wednesday</option>
-              <option>Thursday</option>
-              <option>Friday</option>
-              <option>Saturday</option>
-              <option>Sunday</option>
-            </select>
-            <label for="select-time"></label>
-            <input type="time">
-          </div>
-          <label>
-            <textarea placeholder="Description" name="textarea" id="" cols="30" rows="10"></textarea>
-          </label>
-          <button type="submit" >Submit</button>
-        </form>
-      </div>
-
-    </div>
     <div class="row">
       <div class="col-full">
         <button type="button" id="add">Add Entry</button>
       </div>
+    </div>
+  </div>
+  <div class="modal modal-open">
+    <h2>Add Entry</h2>
+    <div>
+      <form>
+        <div class="column-half">
+          <label for="select-day-of-week"></label>
+          <select name="select-day-of-week" placeholder="Day of Week">
+            <option>Monday</option>
+            <option>Tuesday</option>
+            <option>Wednesday</option>
+            <option>Thursday</option>
+            <option>Friday</option>
+            <option>Saturday</option>
+            <option>Sunday</option>
+          </select>
+          <label for="select-time"></label>
+          <input type="time">
+        </div>
+        <label>
+          <textarea placeholder="Description" name="textarea" id="" cols="30" rows="10"></textarea>
+        </label>
+        <button type="submit">Submit</button>
+      </form>
     </div>
   </div>
   <script src="main.js"></script>

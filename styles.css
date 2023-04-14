@@ -42,6 +42,10 @@ button {
   right: 0;
 }
 
+.modal-open {
+
+}
+
 #add:hover {
   background-color: #95bcf1;
   cursor: pointer;
