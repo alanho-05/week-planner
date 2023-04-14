@@ -154,7 +154,7 @@ h2 {
   padding-top: 30px;
 }
 
-:hover {
+#my-button:hover {
   background-color: #95bcf1;
   cursor: pointer;
 }

@@ -1,3 +1,20 @@
+let data = {
+  view: 'entry-form',
+  entries: [],
+  editing: null,
+  nextEntryId: 1
+};
+
+const previousEntryJSON = localStorage.getItem('javascript-local-storage-project');
+
+window.addEventListener('beforeunload', function (event) {
+  const entryJSON = JSON.stringify(data);
+  localStorage.setItem('javascript-local-storage-project', entryJSON);
+});
+
+if (previousEntryJSON !== null) {
+  data = JSON.parse(previousEntryJSON);
+}
 
 const $form = document.querySelector('.form');
 
@@ -24,6 +41,7 @@ function closedpop(event) {
 }
 
 $form.addEventListener('submit', function (event) {
+  debugger;
   event.preventDefault();
   const entry = {
     entryId: data.nextEntryId,
@@ -33,4 +51,3 @@ $form.addEventListener('submit', function (event) {
   };
   data.entries.shift(entry);
 });
-console.log(entry);
