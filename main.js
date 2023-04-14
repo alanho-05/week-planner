@@ -50,3 +50,16 @@ $form.addEventListener('submit', function (event) {
   };
   data.entries.unshift(entry);
 });
+
+const $dayOf = document.querySelectorAll('.week-day');
+const $weekOf = document.querySelector('.row-weekday');
+const $weekDayHeader = document.querySelector('span');
+
+$weekOf.addEventListener('click', function (event) {
+  for (let i = 0; i < $dayOf.length; i++) {
+    if ($dayOf[i].textContent === event.target.textContent) {
+      $weekDayHeader.textContent = $dayOf[i].textContent;
+    }
+  } console.log('event', event.target.textContent);
+});
+console.log($dayOf);
