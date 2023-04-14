@@ -9,22 +9,28 @@
 <body>
   <h1>Weekly Planner</h1>
   <div class="container">
-    <div class="">
+    <div class="modal">
       <h2>Add Entry</h2>
       <div>
         <form>
-          <label for="select-day-of-week"></label>
-          <select name="select-day-of-week" placeholder="Day of Week">
-            <option>Monday</option>
-            <option>Tuesday</option>
-            <option>Wednesday</option>
-            <option>Thursday</option>
-            <option>Friday</option>
-            <option>Saturday</option>
-            <option>Sunday</option>
-          </select>
-          <label for="select-time"></label>
-          <input type="time">
+          <div class="column-half">
+            <label for="select-day-of-week"></label>
+            <select name="select-day-of-week" placeholder="Day of Week">
+              <option>Monday</option>
+              <option>Tuesday</option>
+              <option>Wednesday</option>
+              <option>Thursday</option>
+              <option>Friday</option>
+              <option>Saturday</option>
+              <option>Sunday</option>
+            </select>
+            <label for="select-time"></label>
+            <input type="time">
+          </div>
+          <label>
+            <textarea placeholder="Description" name="textarea" id="" cols="30" rows="10"></textarea>
+          </label>
+          <button type="submit" >Submit</button>
         </form>
       </div>
 
