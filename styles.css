@@ -71,7 +71,8 @@ h1 {
   border-color: lightseagreen;
   color: white;
   font-size: 26px;
-  position: static;
+
+  /* position: static; */
 }
 
 #no-button {
@@ -101,6 +102,16 @@ main {
   flex-wrap: wrap;
 }
 
+.row-entry {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-full {
+
+}
+
 .container {
   position: absolute;
   background-size: cover;
@@ -111,9 +122,9 @@ main {
   text-align: center;
   justify-content: center;
   background-color: white;
-  width: 400px;
-  height: 200px;
-  margin-left: 300px;
+  width: 600px;
+  height: 400px;
+  margin: auto;
 }
 
 .noshow {
