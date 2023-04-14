@@ -54,3 +54,14 @@ button {
 .hide {
   display: none;
 }
+
+/* test */
+.show {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-color: white;
+  width: 400px;
+  height: 200px;
+  margin-left: 300px;
+}
