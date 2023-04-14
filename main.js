@@ -41,13 +41,13 @@ function closedpop(event) {
 }
 
 $form.addEventListener('submit', function (event) {
-  debugger;
   event.preventDefault();
   const entry = {
     entryId: data.nextEntryId,
-    weekday: event.target.elements.weekday.value,
+    weekday: event.target.elements.day.value,
     time: event.target.elements.time.value,
     textarea: event.target.elements.textarea.value
   };
   data.entries.shift(entry);
+  console.log(event.target.elements.weekday.value);
 });
