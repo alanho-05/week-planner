@@ -48,6 +48,5 @@ $form.addEventListener('submit', function (event) {
     time: event.target.elements.time.value,
     textarea: event.target.elements.textarea.value
   };
-  data.entries.shift(entry);
-  console.log(event.target.elements.weekday.value);
+  data.entries.unshift(entry);
 });

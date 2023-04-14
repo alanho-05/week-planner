@@ -152,9 +152,29 @@ main {
 
 h2 {
   padding-top: 30px;
+  text-align: center;
 }
 
 #my-button:hover {
   background-color: #95bcf1;
   cursor: pointer;
+}
+
+.week-day {
+  border: 1px solid;
+  width: 70px;
+  height: 70px;
+  font-size: 13px;
+  padding-top: 15px;
+  text-align: center;
+}
+
+.week-day:hover {
+  background-color: #e0dcdc;
+}
+
+.row-weekday {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px;
 }
