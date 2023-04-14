@@ -57,12 +57,6 @@ h1 {
   text-align: center;
 }
 
-.row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 #my-button {
   width: 200px;
   height: 50px;
@@ -71,8 +65,6 @@ h1 {
   border-color: lightseagreen;
   color: white;
   font-size: 26px;
-
-  /* position: static; */
 }
 
 #no-button {
@@ -132,7 +124,7 @@ main {
 }
 
 .row {
-  background-color: red;
+  background-color: green;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -160,4 +152,9 @@ main {
 
 h2 {
   padding-top: 30px;
+}
+
+:hover {
+  background-color: #95bcf1;
+  cursor: pointer;
 }
