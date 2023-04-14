@@ -1,12 +1,6 @@
-const $button = document.querySelector('#add');
-
-$button.addEventListener('click', function () {
-  $button.setAttribute('dark');
-
-}
-);
 
 /* test */
+const $popup = document.querySelector('#my-button');
 
 const shut = document.querySelector('#no-button');
 
@@ -14,7 +8,7 @@ const background = document.querySelector('.row');
 
 const shader = document.querySelector('.column-full');
 
-$button.addEventListener('click', popp);
+$popup.addEventListener('click', popp);
 
 shut.addEventListener('click', closedpop);
 
